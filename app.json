@@ -39,8 +39,33 @@
       ],
       "expo-secure-store"
     ],
+    "build": {
+      "preview": {
+        "android": {
+          "package" : "com.khizi.Post",
+          "buildType": "apk"
+        }
+      },
+      "preview2": {
+        "android": {
+          "gradleCommand": ":app:assembleRelease"
+        }
+      },
+      "preview3": {
+        "developmentClient": true
+      },
+      "production": {}
+    },
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "08efc99e-cfbb-434f-b1ac-62d698860b1d"
+      }
     }
   }
 }
